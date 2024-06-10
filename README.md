@@ -1,6 +1,38 @@
 
-## scrapy crawl books_crawler -o books.csv
+## git push origin branch2
 ![螢幕擷取畫面 2024-06-10 164703](https://github.com/chenkuanhan/Web-lesson/assets/104495841/74029ee9-32d4-4f9e-8a2f-38abf22d34c1)
+
+## scrapy crawl books_crawler -o books.csv
+```Python
+import scrapy
+
+
+class BooksCrawlerSpider(scrapy.Spider):
+    name = "books_crawler"
+    # allowed_domains = ["www.books.com.tw"]
+    start_urls = ["https://www.books.com.tw/web/books_nbtopm_19/"]
+
+    def parse(self, response):
+        for book in response.css("div.box clearfix"):
+            name = book.css("div.type02_bd-a h4 a::text").get()
+            url = book.css("div.type02_bd-a h4 a::attr(href)").get()
+            prices = book.css("div.type02_bd-a ul.msg li.price_a strong b::text").getall()
+
+            yield {
+            "書名":name,
+            "網址":url,
+            "優惠價": prices[0],
+            "原價": prices[1]
+
+            }
+
+
+
+
+
+
+
+```
 
 ```
 (base) PS C:\Users\Asus\Documents\Web-lesson> cd C:\Users\Asus\Documents\Web-lesson\SimpleCrawler_manu\BooksCrawler
