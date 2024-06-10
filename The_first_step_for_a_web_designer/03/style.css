@@ -1,0 +1,14 @@
+p {
+    background-color: aqua;
+    /* display: inline-block; */
+    
+}
+.more{
+    background-color: yellow;
+    display: inline-block;
+
+}
+blockquote {
+    background-color: blueviolet;
+    display: inline-block;
+}

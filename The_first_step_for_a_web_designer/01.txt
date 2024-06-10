@@ -1,0 +1,9 @@
+1.<head>烘焙工坊</head>
+
+
+2.在相同標籤上設定不同屬性好使CSS能夠分別設定樣式
+
+3.巢狀標籤
+<p><a href="路經">內文</a></p>
+
+4.display:inline-block

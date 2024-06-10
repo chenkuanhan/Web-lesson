@@ -1,0 +1,18 @@
+<body>
+    <header>
+        <h1>烘培工訪</h1>
+        <nav>
+        <ul>
+            <li><a href="#">最新消息</a></li>
+            <li><a href="#">關於我們</a></li>
+            <li><a href="#">門市據點</a></li>
+            <li><a href="#">會員專區</a></li>
+        </ul>
+        </nav>
+    </header>
+    <main>
+        <p>亞麻的細語、葵花的微風，每一口都是自然的敘</p>
+        <p class="more"><a href="C:\Users\Hank\Desktop\成為網頁設計師的第一步\金魚都能懂網頁設計入門\temp.html">瞭解更多</a></p>
+        <blockquote>嚴選天然食材，精湛匠心烘培，<br>讓幸福在每口麵包中的香氣蔓延</blockquote>
+    </main>
+</body>
